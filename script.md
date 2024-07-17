@@ -50,7 +50,7 @@ do
     mkdir localImage || echo 0
     docker save $i -o localImage/$fileName
 done
-    # tar -zcf localImage.tar.gz localImage
+    tar -zcf localImage.tar.gz localImage
 ```
 
 ## 将本地镜像包解压并且上传到私有仓库
